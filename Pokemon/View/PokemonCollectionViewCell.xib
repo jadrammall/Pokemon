@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCollectionViewCell" id="gTV-IL-0wX" customClass="PokemonCollectionViewCell" customModule="Pokedex" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LS-Ar-lDg">
+                        <rect key="frame" x="5" y="5" width="170" height="170"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaD-kD-vdw">
+                                <rect key="frame" x="61.666666666666671" y="74.333333333333329" width="47" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="NaD-kD-vdw" firstAttribute="centerX" secondItem="5LS-Ar-lDg" secondAttribute="centerX" id="Owl-ZD-biH"/>
+                            <constraint firstItem="NaD-kD-vdw" firstAttribute="centerY" secondItem="5LS-Ar-lDg" secondAttribute="centerY" id="srJ-j8-nae"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="5LS-Ar-lDg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="4r4-0v-9SK"/>
+                <constraint firstAttribute="bottom" secondItem="5LS-Ar-lDg" secondAttribute="bottom" constant="5" id="WV4-ad-ZVh"/>
+                <constraint firstItem="5LS-Ar-lDg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="hKs-y1-fJF"/>
+                <constraint firstAttribute="trailing" secondItem="5LS-Ar-lDg" secondAttribute="trailing" constant="5" id="ohe-1R-X0D"/>
+            </constraints>
+            <size key="customSize" width="185" height="159"/>
+            <connections>
+                <outlet property="pokemonNameLabel" destination="NaD-kD-vdw" id="ReA-Pm-AJX"/>
+            </connections>
+            <point key="canvasLocation" x="232.06106870229007" y="26.760563380281692"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
